@@ -10,7 +10,8 @@ RUN wget -qO- http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 	tar xz
 
 COPY texlive.profile /
-
 RUN cd install-tl-* && ./install-tl -profile /texlive.profile
-
 RUN rm -rf install-tl-*
+
+RUN mkdir /var/tex
+WORKDIR /var/tex

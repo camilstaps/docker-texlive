@@ -1,7 +1,19 @@
 # docker-texlive
 
-Dockerfiles for TeX Live
+Dockerfiles for [TeX Live](https://tug.org/texlive/).
 
-This is the source of my Docker TeX Live repository. For more details, take a
-look at
-[hub.docker.com/r/camilstaps/texlive](https://hub.docker.com/r/camilstaps/texlive).
+## How to use
+
+Simply run `pdflatex` or another program (`latexmk` is available too):
+
+```
+docker run -v /my/.../directory:/var/tex camilstaps/texlive pdflatex doc.tex
+```
+
+## Source code
+
+[github.com/camilstaps/docker-texlive](https://github.com/camilstaps/docker-texlive)
+
+## Docker Hub
+
+[hub.docker.com/r/camilstaps/texlive](https://hub.docker.com/r/camilstaps/texlive)
