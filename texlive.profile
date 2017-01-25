@@ -43,7 +43,7 @@ collection-latex 1
 collection-latexextra 1
 collection-latexrecommended 1
 collection-luatex 1
-collection-mathextra 1
+collection-mathscience 1
 collection-metapost 1
 collection-music 1
 collection-omega 1
@@ -51,7 +51,6 @@ collection-pictures 1
 collection-plainextra 1
 collection-pstricks 1
 collection-publishers 1
-collection-science 1
 collection-texworks 1
 collection-xetex 1
 in_place 0
