@@ -1,9 +1,9 @@
-FROM debian:stretch
+FROM debian:stretch-slim
 
 COPY texlive.profile /
-
-RUN INSTALL_PACKAGES="wget libswitch-perl" \
-	&& PACKAGES="biber perl-modules" \
+ 
+RUN INSTALL_PACKAGES="libswitch-perl" \
+	&& PACKAGES="perl-modules make wget" \
 	&& apt-get update \
 	&& apt-get install -qq $INSTALL_PACKAGES $PACKAGES --no-install-recommends \
 	&& wget -qO- http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz |\
@@ -16,5 +16,6 @@ RUN INSTALL_PACKAGES="wget libswitch-perl" \
 	&& apt-get autoremove --purge -qq \
 	&& rm -rf /var/lib/apt/lists/*
 
+ENV PATH "/usr/local/texlive/bin/x86_64-linux:${PATH}"
 RUN mkdir /var/tex
 WORKDIR /var/tex

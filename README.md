@@ -2,6 +2,11 @@
 
 Dockerfiles for [TeX Live](https://tug.org/texlive/).
 
+## Available tags
+
+- `standard`: A standard release containing many popular packages and tools.
+- `minimal`: The infrastructure only, packages can be installed using `tlmgr`.
+
 ## How to use
 
 Simply run `pdflatex` or another program (`latexmk` is available too):
