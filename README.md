@@ -4,7 +4,7 @@ Dockerfiles for [TeX Live](https://tug.org/texlive/).
 
 ## Available tags
 
-- `standard`: A standard release containing many popular packages and tools.
+- `full`: A full release containing all packages and tools from the installer.
 - `minimal`: The infrastructure only, packages can be installed using `tlmgr`.
 
 ## How to use
