@@ -3,7 +3,7 @@ FROM debian:stretch
 COPY texlive.profile /
  
 RUN INSTALL_PACKAGES="libswitch-perl" \
-	&& PACKAGES="libfontconfig1 perl-modules make wget" \
+	&& PACKAGES="libfontconfig1 perl-modules wget" \
 	&& apt-get update \
 	&& apt-get install -qq $INSTALL_PACKAGES $PACKAGES --no-install-recommends \
 	&& wget -qO- http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz |\
