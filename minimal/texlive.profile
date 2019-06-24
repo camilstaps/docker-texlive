@@ -1,6 +1,6 @@
 selected_scheme scheme-infraonly
 TEXDIR /usr/local/texlive
-TEXMFCONFIG ~/.texlive/texmf-config
+TEXMFCONFIG /.texlive/texmf-config
 TEXMFHOME /.texmf
 TEXMFLOCAL /usr/local/texlive/texmf-local
 TEXMFSYSCONFIG /usr/local/texlive/texmf-config
